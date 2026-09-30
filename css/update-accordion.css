@@ -1,0 +1,108 @@
+/* Actualizacion desplegable: cargado despues de style.css para no alterar el resto de la web. */
+#update-modal .modal-panel {
+  width: min(900px, 100%);
+}
+
+#update-modal .changelog-grid {
+  align-items: start;
+}
+
+#update-modal .changelog-item {
+  padding: 0;
+  overflow: hidden;
+  background: #fff;
+  border: 3px solid #252525;
+  box-shadow: 5px 5px 0 #cbc3bb;
+}
+
+#update-modal .changelog-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 68px;
+  padding: 16px 18px;
+  color: #317b24;
+  background: #fff;
+  border: 0;
+  cursor: pointer;
+  text-align: left;
+}
+
+#update-modal .changelog-trigger:hover,
+#update-modal .changelog-trigger:focus-visible {
+  background: #eef7e9;
+  outline: none;
+}
+
+#update-modal .changelog-trigger:focus-visible {
+  box-shadow: inset 0 0 0 3px #4caf32;
+}
+
+#update-modal .changelog-label {
+  font-family: var(--display-font);
+  font-size: 22px;
+  line-height: 1;
+}
+
+#update-modal .changelog-chevron {
+  display: grid;
+  place-items: center;
+  flex: 0 0 34px;
+  width: 34px;
+  height: 34px;
+  margin-left: 12px;
+  color: #fff;
+  background: #317b24;
+  border: 2px solid #1b4315;
+  font-size: 23px;
+  line-height: 1;
+}
+
+#update-modal .changelog-trigger[aria-expanded="true"] .changelog-chevron {
+  transform: rotate(180deg);
+}
+
+#update-modal .changelog-panel {
+  padding: 0 18px 18px;
+  border-top: 2px solid #ded8d2;
+}
+
+#update-modal .changelog-panel[hidden] {
+  display: none;
+}
+
+#update-modal .changelog-panel ul {
+  margin: 16px 0 0;
+  padding-left: 21px;
+}
+
+#update-modal .changelog-panel li {
+  margin: 0 0 10px;
+  color: #302e2b;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+#update-modal .changelog-panel li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 760px) {
+  #update-modal .changelog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #update-modal .changelog-trigger {
+    min-height: 60px;
+    padding: 14px;
+  }
+
+  #update-modal .changelog-label {
+    font-size: 19px;
+  }
+
+  #update-modal .changelog-panel {
+    padding: 0 14px 15px;
+  }
+}
