@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#202120">
+  <title>Minecraft Launcher Remastered</title>
+  <meta name="description" content="Minecraft Launcher Remastered, creado por ChrisCode+.">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/update-accordion.css">
+</head>
+<body>
+  <header class="site-header" id="inicio">
+    <a class="brand" href="https://www.minecraft.net/es-es" target="_blank" rel="noopener" aria-label="Abrir Minecraft.net">
+      <img src="assets/minecraft-remastered-logo.png" alt="Minecraft Remastered">
+    </a>
+
+    <button class="mobile-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+
+    <nav class="main-nav" aria-label="Navegacion principal">
+      <div class="nav-group">
+        <button class="nav-trigger" type="button">ACTUALIZACION <span>⌄</span></button>
+        <div class="dropdown">
+          <button type="button" data-modal-open="update-modal">ULTIMA ACTUALIZACION</button>
+          <a href="#proyecto">CAMBIOS DEL PROYECTO</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-trigger" type="button">DESCARGAS <span>⌄</span></button>
+        <div class="dropdown">
+          <a href="#descargas" data-download-slide="0">WINDOWS</a>
+          <a href="#descargas" data-download-slide="1">LINUX</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-trigger" type="button">ACERCA DE <span>⌄</span></button>
+        <div class="dropdown">
+          <button type="button" data-modal-open="about-modal">LAUNCHER R</button>
+          <a href="#redes">REDES SOCIALES</a>
+          <a href="#footer">CHRISCODE+</a>
+        </div>
+      </div>
+    </nav>
+
+    <a class="buy-button" href="https://www.minecraft.net/es-es/store/minecraft-java-bedrock-edition-pc?tabs=%7B%22details%22%3A0%7D" target="_blank" rel="noopener">
+      COMPRAR AHORA <span>›</span>
+    </a>
+  </header>
+
+  <main>
+    <div class="dark-world">
+      <section class="hero-section" aria-labelledby="hero-title">
+        <div class="dark-pixels" aria-hidden="true"></div>
+        <div class="section-heading hero-heading">
+          <p class="eyebrow">MINECRAFT LAUNCHER REMASTERED</p>
+          <h1 id="hero-title">TODO LO QUE NECESITAS PARA TU<br><span>EXPERIENCIA MINECRAFT</span></h1>
+          <p>Descubre herramientas, descargas e información útil para disfrutar Minecraft con una experiencia moderna, clara y organizada.</p>
+        </div>
+
+        <div class="peek-carousel feature-carousel" data-peek-carousel data-autoplay="false">
+          <button class="peek-arrow prev" type="button" aria-label="Banner anterior">‹</button>
+          <div class="peek-stage">
+            <article class="peek-slide feature-slide">
+              <img src="assets/hero-1.jpg" alt="Aventura de Minecraft">
+              <div class="slide-copy"><span class="tag">INICIA TU AVENTURA</span><h2>TODO EN UN SOLO LUGAR</h2><p>Administra versiones, perfiles y opciones del launcher sin complicaciones.</p><a href="#pasos">DESCUBRIR <b>→</b></a></div>
+            </article>
+            <article class="peek-slide feature-slide">
+              <img src="assets/hero-2.jpg" alt="Herramientas de Minecraft">
+              <div class="slide-copy"><span class="tag">MEJORA TU JUEGO</span><h2>CONFIGURACION COMPLETA</h2><p>Ajusta memoria, Java y preferencias para cada perfil de Minecraft.</p><a href="#pasos">VER MAS <b>→</b></a></div>
+            </article>
+            <article class="peek-slide feature-slide">
+              <img src="assets/hero-3.jpg" alt="Mods y complementos">
+              <div class="slide-copy"><span class="tag">EXPLORA MODRINTH</span><h2>MODS Y COMPLEMENTOS</h2><p>Encuentra mods, modpacks y shaders compatibles con tu versión.</p><a href="#pasos">EXPLORAR <b>→</b></a></div>
+            </article>
+            <article class="peek-slide feature-slide">
+              <img src="assets/hero-4.jpg" alt="Descargas organizadas">
+              <div class="slide-copy"><span class="tag">DESCARGAS RAPIDAS</span><h2>RECURSOS ORGANIZADOS</h2><p>Visualiza el progreso y controla tus instalaciones desde el launcher.</p><a href="#descargas">DESCARGAR <b>→</b></a></div>
+            </article>
+          </div>
+          <button class="peek-arrow next" type="button" aria-label="Banner siguiente">›</button>
+          <div class="peek-dots" aria-label="Paginacion de banners"></div>
+        </div>
+      </section>
+
+      <section class="steps-section" id="pasos" aria-labelledby="steps-title">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">LISTO PARA EMPEZAR</p>
+          <h2 id="steps-title">EMPIEZA EN POCOS PASOS</h2>
+          <p>Descarga el ejecutable, completa la instalación y abre Minecraft Launcher Remastered.</p>
+        </div>
+        <div class="step-grid shell">
+          <article class="step-card"><img src="assets/step-download.jpg" alt="Descargar launcher"><div><span>01</span><h3>DESCARGA</h3><p>Elige tu sistema operativo y descarga el ejecutable correspondiente.</p><a href="#descargas">IR A DESCARGAS →</a></div></article>
+          <article class="step-card"><img src="assets/step-install.jpg" alt="Instalar launcher"><div><span>02</span><h3>INSTALA</h3><p>Ejecuta el archivo y sigue los pasos para preparar el launcher.</p><a href="#descargas">VER OPCIONES →</a></div></article>
+          <article class="step-card"><img src="assets/step-play.jpg" alt="Jugar Minecraft"><div><span>03</span><h3>JUEGA</h3><p>Selecciona una versión, configura tu perfil y comienza tu aventura.</p><a href="#proyecto">CONOCER MAS →</a></div></article>
+        </div>
+      </section>
+      <div class="pixel-transition dark-to-green" aria-hidden="true"></div>
+    </div>
+
+    <section class="downloads-section" id="descargas" aria-labelledby="downloads-title">
+      <div class="green-pixels" aria-hidden="true"></div>
+      <div class="section-heading">
+        <p class="eyebrow">WINDOWS Y LINUX</p>
+        <h2 id="downloads-title">DESCARGA MINECRAFT LAUNCHER REMASTERED</h2>
+        <p>Usa las flechas para cambiar de plataforma y descargar el ejecutable.</p>
+      </div>
+
+      <div class="download-carousel shell" data-download-carousel>
+        <button class="download-arrow prev" type="button" aria-label="Plataforma anterior">‹</button>
+        <div class="download-viewport">
+          <div class="download-track">
+            <article class="download-slide" data-platform="windows">
+              <img src="assets/download-windows.jpg" alt="Minecraft Launcher Remastered para Windows">
+              <div class="download-copy">
+                <span class="platform-label">PARA WINDOWS</span>
+                <h3>MINECRAFT LAUNCHER<br>REMASTERED</h3>
+                <p>Descarga la version actualizada para Windows y comienza la instalacion.</p>
+                <a class="minecraft-button" href="downloads/Minecraft-Launcher-Remastered-Windows.exe" download>DESCARGAR PARA WINDOWS <b>↓</b></a>
+                <small>Archivo ejecutable .exe</small>
+              </div>
+            </article>
+            <article class="download-slide" data-platform="linux">
+              <img src="assets/download-linux.jpg" alt="Minecraft Launcher Remastered para Linux">
+              <div class="download-copy">
+                <span class="platform-label">PARA LINUX</span>
+                <h3>MINECRAFT LAUNCHER<br>REMASTERED</h3>
+                <p>Descarga la compilación nativa para Linux x64. Extrae el ZIP y sigue el archivo INSTRUCCIONES_LINUX.txt incluido para abrirlo correctamente.</p>
+                <a class="minecraft-button" href="downloads/MinecraftLauncherR-linux-x64.zip" download>DESCARGAR ZIP LINUX <b>↓</b></a>
+                <a class="minecraft-button secondary-download" href="downloads/INSTRUCCIONES_LINUX.txt" download>DESCARGAR INSTRUCCIONES .TXT <b>↓</b></a>
+                <small>ZIP nativo para Linux x64 · incluye INSTRUCCIONES_LINUX.txt</small>
+              </div>
+            </article>
+          </div>
+        </div>
+        <button class="download-arrow next" type="button" aria-label="Plataforma siguiente">›</button>
+      </div>
+      <div class="download-switch"><button class="active" type="button" data-platform-button="0">WINDOWS</button><button type="button" data-platform-button="1">LINUX</button></div>
+    </section>
+
+    <section class="articles-section" id="proyecto" aria-labelledby="articles-title">
+      <div class="articles-layout shell">
+        <div class="articles-intro">
+          <p class="eyebrow green">INFORMACION</p>
+          <h2 id="articles-title">DESCUBRE EL PROYECTO</h2>
+          <p>Conoce las novedades, la historia del launcher y las formas de apoyar su desarrollo.</p>
+          <div class="inline-arrows"><button type="button" data-rotate="project" data-direction="-1" aria-label="Anterior">←</button><button type="button" data-rotate="project" data-direction="1" aria-label="Siguiente">→</button></div>
+        </div>
+        <div class="rotating-cards" data-rotating-group="project">
+          <article class="article-card"><img src="assets/article-update.jpg" alt="Actualizacion del launcher"><h3>ACTUALIZACION</h3><p>Revisa todo lo añadido, mejorado, solucionado o eliminado.</p><button type="button" data-modal-open="update-modal">VER ACTUALIZACION ↗</button></article>
+          <article class="article-card"><img src="assets/article-about.jpg" alt="Acerca del launcher"><h3>ACERCA DE MINECRAFT LAUNCHER REMASTERED</h3><p>Descubre el objetivo, las funciones y la identidad del proyecto.</p><button type="button" data-modal-open="about-modal">CONOCER EL PROYECTO ↗</button></article>
+          <article class="article-card"><img src="assets/article-support.jpg" alt="Apoyar el proyecto"><h3>APOYA EL PROYECTO</h3><p>Tu apoyo ayuda a mantener y mejorar Minecraft Launcher Remastered.</p><a href="https://paypal.me/chrizinho" target="_blank" rel="noopener">APOYAR EN PAYPAL ↗</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="social-section" id="redes" aria-labelledby="social-title">
+      <div class="blue-pixels" aria-hidden="true"></div>
+      <div class="section-heading">
+        <p class="eyebrow">CHRISCODE+</p>
+        <h2 id="social-title">REDES SOCIALES</h2>
+        <p>Sigue el desarrollo, conoce las novedades y encuentra el código del proyecto.</p>
+      </div>
+
+      <div class="peek-carousel social-carousel" data-peek-carousel>
+        <button class="peek-arrow prev" type="button" aria-label="Red social anterior">‹</button>
+        <div class="peek-stage">
+          <article class="peek-slide social-slide">
+            <img src="assets/social-youtube.jpg" alt="YouTube de ChrisCode+">
+            <div class="social-copy"><h3>YOUTUBE</h3><p>Videos, novedades y contenido relacionado con Minecraft Launcher Remastered.</p><a href="https://www.youtube.com/@galaktotalcc" target="_blank" rel="noopener">VER CANAL ↗</a></div>
+          </article>
+          <article class="peek-slide social-slide">
+            <img src="assets/social-github.jpg" alt="GitHub del proyecto">
+            <div class="social-copy"><h3>GITHUB</h3><p>Repositorio, código y seguimiento del desarrollo del launcher.</p><a href="https://github.com/ChrizCodePlus" target="_blank" rel="noopener noreferrer">VER GITHUB ↗</a></div>
+          </article>
+          <article class="peek-slide social-slide disabled">
+            <img src="assets/social-soon.jpg" alt="Proximamente">
+            <div class="social-copy"><h3>PROXIMAMENTE</h3><p>Una nueva red social será añadida en una futura actualización.</p><span>MUY PRONTO</span></div>
+          </article>
+        </div>
+        <button class="peek-arrow next" type="button" aria-label="Red social siguiente">›</button>
+        <div class="peek-dots" aria-label="Paginacion de redes sociales"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="footer">
+    <div class="footer-grid shell">
+      <div class="creator-block">
+        <img src="assets/creator-logo.png" alt="Logo de ChrisCode+">
+        <div><h2>CHRISCODE+</h2><p>Creador de Minecraft Launcher Remastered.</p><small>© 2026 Minecraft Launcher Remastered</small></div>
+      </div>
+      <div class="footer-links"><h3>LAUNCHER</h3><a href="#inicio">INICIO</a><button type="button" data-modal-open="update-modal">ACTUALIZACION</button><a href="#descargas">DESCARGAS</a></div>
+      <div class="footer-links"><h3>PROYECTO</h3><button type="button" data-modal-open="about-modal">ACERCA DE</button><a href="https://paypal.me/chrizinho" target="_blank" rel="noopener">APOYAR</a><a href="#redes">REDES SOCIALES</a></div>
+    </div>
+    <div class="legal shell">Minecraft Launcher Remastered es un proyecto independiente y no está afiliado con Mojang Studios ni Microsoft. <a href="politica-privacidad.html">POLITICA DE PRIVACIDAD</a></div>
+  </footer>
+
+  <div class="modal" id="update-modal" role="dialog" aria-modal="true" aria-labelledby="update-title" hidden>
+    <div class="modal-backdrop" data-modal-close></div>
+    <div class="modal-panel">
+      <button class="modal-close" type="button" data-modal-close aria-label="Cerrar">×</button>
+      <p class="eyebrow green">ULTIMA VERSION</p>
+      <h2 id="update-title">ACTUALIZACION DEL LAUNCHER</h2>
+      <p class="modal-lead">Selecciona una categoria para consultar lo nuevo, lo agregado y lo corregido en esta version.</p>
+      <div class="changelog-grid" data-changelog-accordion>
+        <section class="changelog-item">
+          <button class="changelog-trigger" type="button" aria-expanded="false" aria-controls="changelog-new">
+            <span class="changelog-label">★ NUEVO</span>
+            <span class="changelog-chevron" aria-hidden="true">⌄</span>
+          </button>
+          <div class="changelog-panel" id="changelog-new" hidden>
+            <ul>
+              <li>Nueva compilacion de Windows actualizada para la descarga principal del launcher.</li>
+              <li>Nuevo apartado de Aspectos disponible en Windows.</li>
+              <li>Paquete Linux x64 actualizado en formato ZIP nativo.</li>
+              <li>Archivo INSTRUCCIONES_LINUX.txt incluido dentro del ZIP de Linux y disponible tambien como descarga separada.</li>
+              <li>Seccion de cambios reorganizada para mostrar de forma clara lo nuevo, lo agregado, lo mejorado y lo corregido.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="changelog-item">
+          <button class="changelog-trigger" type="button" aria-expanded="false" aria-controls="changelog-added">
+            <span class="changelog-label">+ AGREGADO</span>
+            <span class="changelog-chevron" aria-hidden="true">⌄</span>
+          </button>
+          <div class="changelog-panel" id="changelog-added" hidden>
+            <ul>
+              <li>Boton para descargar directamente el archivo de instrucciones de Linux.</li>
+              <li>Indicacion visible de que el ZIP de Linux incluye INSTRUCCIONES_LINUX.txt.</li>
+              <li>Apartado de Aspectos en Windows para gestionar la imagen que se mostrara en modo multiplayer dentro de MLR.</li>
+              <li>Base de datos de aspectos para guardar solo el nick del usuario y la imagen seleccionada, visible en multiplayer para usuarios del launcher MLR.</li>
+              <li>Nuevo menu de Consola, con registros de descarga, instalacion e inicio de Minecraft.</li>
+              <li>Integracion con Modrinth para descargar mods, modpacks y shaders compatibles.</li>
+              <li>Descarga automatica del Java Runtime adecuado para cada version.</li>
+              <li>Instancias separadas por version y loader para evitar conflictos entre mods.</li>
+              <li>Pestaña Descargas para administrar el contenido instalado.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="changelog-item">
+          <button class="changelog-trigger" type="button" aria-expanded="false" aria-controls="changelog-improved">
+            <span class="changelog-label">↑ MEJORADO</span>
+            <span class="changelog-chevron" aria-hidden="true">⌄</span>
+          </button>
+          <div class="changelog-panel" id="changelog-improved" hidden>
+            <ul>
+              <li>Descarga principal de Windows actualizada con la nueva compilacion.</li>
+              <li>Descarga de Linux conservada desde la version corregida anterior.</li>
+              <li>Inicio de Minecraft con Vanilla, Fabric, Forge, NeoForge y OptiFine.</li>
+              <li>Carga progresiva de tarjetas, imagenes y versiones para reducir el uso de recursos.</li>
+              <li>Barra de descarga con progreso, estado de instalacion y aviso de descarga completada.</li>
+              <li>Navegacion entre menus mas fluida y con menos tirones.</li>
+              <li>Gestion de perfiles, versiones y carpetas de juego mas organizada.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="changelog-item">
+          <button class="changelog-trigger" type="button" aria-expanded="false" aria-controls="changelog-fixed">
+            <span class="changelog-label">✓ CORREGIDO</span>
+            <span class="changelog-chevron" aria-hidden="true">⌄</span>
+          </button>
+          <div class="changelog-panel" id="changelog-fixed" hidden>
+            <ul>
+              <li>Corregidos errores de descarga en Windows.</li>
+              <li>Corregidos crasheos detectados en la version de Windows.</li>
+              <li>Actualizados los hashes SHA-256 de Windows, Linux e instrucciones.</li>
+              <li>Corregido el error que impedia iniciar Minecraft por librerias faltantes.</li>
+              <li>Solucionada la lista de versiones que desaparecia al editar o crear perfiles.</li>
+              <li>Corregida la descarga de mods incompatibles con la version seleccionada.</li>
+              <li>Los mods ahora se cargan desde la carpeta correcta de cada instancia.</li>
+              <li>Los modpacks ya no crean perfiles duplicados y distribuyen correctamente sus archivos.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="changelog-item">
+          <button class="changelog-trigger" type="button" aria-expanded="false" aria-controls="changelog-removed">
+            <span class="changelog-label">− ELIMINADO</span>
+            <span class="changelog-chevron" aria-hidden="true">⌄</span>
+          </button>
+          <div class="changelog-panel" id="changelog-removed" hidden>
+            <ul>
+              <li>Cargas innecesarias y actualizaciones excesivas dentro de los menus.</li>
+              <li>Eventos repetidos que podian causar lag durante las descargas.</li>
+              <li>Instalacion de contenido incompatible o sin un perfil adecuado.</li>
+              <li>Mezcla de mods pertenecientes a diferentes versiones o loaders.</li>
+              <li>Archivos temporales y procesos antiguos que ya no eran necesarios.</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="about-modal" role="dialog" aria-modal="true" aria-labelledby="about-title" hidden>
+    <div class="modal-backdrop" data-modal-close></div>
+    <div class="modal-panel about-panel">
+      <button class="modal-close" type="button" data-modal-close aria-label="Cerrar">×</button>
+
+      <header class="about-header">
+        <div>
+          <p class="eyebrow green">INFORMACION DEL PROYECTO</p>
+          <h2 id="about-title">MINECRAFT LAUNCHER REMASTERED</h2>
+        </div>
+        <span class="about-version">VERSION 2.2 BETA</span>
+      </header>
+
+      <div class="about-content">
+        <section class="about-description" aria-label="Descripcion del proyecto">
+          <p>Minecraft Launcher Remastered es un proyecto independiente creado para ofrecer una experiencia comoda, confiable y visualmente cuidada a la comunidad. No pretende sustituir al launcher oficial ni distribuir, vender o proporcionar contenido de Minecraft. Su objetivo es fomentar el uso y la compra legitima del juego mediante los canales oficiales de Minecraft.</p>
+          <p>La unica pagina oficial de este proyecto es <a href="https://launch-mcremaster.netlify.app" target="_blank" rel="noopener">launch-mcremaster.netlify.app</a>. La pagina oficial de Minecraft es <a href="https://www.minecraft.net/es-es" target="_blank" rel="noopener">minecraft.net</a>. Cualquier descarga, noticia o enlace externo mostrado por el launcher debe proceder de sus servicios oficiales o de plataformas reconocidas como Modrinth.</p>
+        </section>
+
+        <aside class="about-author" aria-label="Autor del proyecto">
+          <img src="assets/creator-logo.png" alt="Logo de ChrisCode+">
+          <div>
+            <span>AUTOR</span>
+            <h3>ChrisCode+</h3>
+            <p>Desarrollo, diseño e integracion del launcher.</p>
+          </div>
+        </aside>
+      </div>
+
+      <div class="about-notice">
+        <span aria-hidden="true">!</span>
+        <p>Proyecto independiente. Minecraft es una marca de Mojang Studios y Microsoft.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" role="status" aria-live="polite" hidden></div>
+  <script src="js/app.js"></script>
+  <script src="js/update-accordion.js"></script>
+</body>
+</html>
