@@ -1,0 +1,18 @@
+MINECRAFT LAUNCHER REMASTERED PARA LINUX x64
+Creado por ChrisCode+
+
+COMO INICIAR
+
+1. Extrae completamente este archivo ZIP.
+2. Abre una terminal dentro de la carpeta extraída.
+3. Ejecuta exactamente:
+
+chmod +x MinecraftLauncherR
+./MinecraftLauncherR
+
+IMPORTANTE
+- Mantén MinecraftLauncherR y la carpeta data juntos.
+- No ejecutes el archivo directamente desde dentro del ZIP.
+- Esta compilación es para Linux x64.
+- Si aparece "Permiso denegado", vuelve a ejecutar:
+  chmod +x MinecraftLauncherR

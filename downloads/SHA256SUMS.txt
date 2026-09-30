@@ -1,0 +1,3 @@
+dac30cff7f4cf4c919ff891fa93377b17e9717d793b72a0d0d2802e0c01a6e9c  Minecraft-Launcher-Remastered-Windows.exe
+4fe3b4be5d533c6885caae0da402f97c8b19c30a5e396bc4208371f493d51690  MinecraftLauncherR-linux-x64.zip
+91d8483491aa4851ff068d5a7f39a2124d61f5a8b04fdf4560ca0f6896503cdc  INSTRUCCIONES_LINUX.txt
