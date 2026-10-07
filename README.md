@@ -1,1 +1,1 @@
-# Minecraft-Launcher-R-web
+# Launcher-R
