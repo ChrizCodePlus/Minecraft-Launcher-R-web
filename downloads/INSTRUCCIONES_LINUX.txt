@@ -1,21 +1,22 @@
-MINECRAFT LAUNCHER REMASTERED v4.0.0 - LINUX
+LAUNCHER REMASTERED PARA LINUX x64
+Creado por ChrisCode+
 
-INSTALAR COMO APLICACIÓN NORMAL
-1. Extrae completamente el ZIP.
+PROYECTO INDEPENDIENTE Y NO OFICIAL
+Launcher Remastered no está afiliado, patrocinado ni respaldado por Mojang Studios o Microsoft.
+No es el launcher oficial de Minecraft.
+
+COMO INICIAR
+
+1. Extrae completamente este archivo ZIP.
 2. Abre una terminal dentro de la carpeta extraída.
-3. Ejecuta:
-     bash install-linux.sh
-4. Después abre "Minecraft Launcher Remastered" desde el menú de aplicaciones.
+3. Ejecuta exactamente:
 
-No necesitas volver a iniciar el launcher desde una terminal.
+chmod +x MinecraftLauncherR
+./MinecraftLauncherR
 
-ACTUALIZAR
-- Extrae la nueva versión y vuelve a ejecutar:
-     bash install-linux.sh
-- El instalador reemplaza únicamente los archivos de la aplicación.
-- No elimina .minecraft, mundos, perfiles, mods ni configuración del usuario.
-
-DESINSTALAR LA APLICACIÓN
-     bash uninstall-linux.sh
-
-La desinstalación tampoco elimina .minecraft ni los datos personales del launcher.
+IMPORTANTE
+- Mantén MinecraftLauncherR y la carpeta data juntos.
+- No ejecutes el archivo directamente desde dentro del ZIP.
+- Esta compilación es para Linux x64.
+- Si aparece "Permiso denegado", vuelve a ejecutar:
+  chmod +x MinecraftLauncherR

@@ -3,128 +3,143 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#202120">
+  <meta name="theme-color" content="#171917">
   <title>Política de Privacidad | Launcher Remastered</title>
-  <style>
-    :root{--green:#3c8527;--green2:#52a535;--black:#111311;--panel:#1d201d;--text:#f5f5f5;--muted:#c7cbc7}
+  <meta name="description" content="Política de privacidad de Launcher Remastered, proyecto independiente y no oficial.">
+  <link rel="icon" type="image/png" sizes="256x256" href="assets/lr-tab-icon.png?v=2">
+  <link rel="shortcut icon" href="favicon.ico?v=2">  <link rel="apple-touch-icon" href="assets/lr-tab-icon.png?v=2">
+<style>
+    :root{
+      --bg:#0d100d;--panel:#171b17;--panel2:#1e231e;--ink:#f5f6f3;--muted:#bcc3ba;
+      --green:#65cf43;--green2:#338023;--line:#313831;--cream:#f1ede7;--dark:#0a0c0a;
+      --display:Impact,"Arial Black",Haettenschweiler,sans-serif;
+      --body:"Segoe UI",Arial,Helvetica,sans-serif
+    }
     *{box-sizing:border-box}
-    body{margin:0;background:#111311;color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.65}
-    header{position:sticky;top:0;z-index:2;background:#171917;border-bottom:4px solid #2f332f;padding:16px 22px}
-    header a{color:#fff;text-decoration:none;font-weight:700}
-    main{max-width:980px;margin:0 auto;padding:48px 22px 70px}
-    .hero{background:linear-gradient(135deg,#203c1c,#172617);border:3px solid #466a3d;box-shadow:8px 8px 0 #080908;padding:30px;margin-bottom:28px}
-    h1,h2{font-family:Arial,Helvetica,sans-serif;line-height:1.15}
-    h1{margin:0 0 12px;font-size:clamp(32px,6vw,58px)}
-    h2{margin:34px 0 10px;color:#79c95d;font-size:25px}
-    p,li{color:var(--muted)}
-    strong{color:#fff}
-    section{background:var(--panel);border-left:6px solid var(--green);padding:22px 24px;margin:18px 0}
-    a{color:#83d967}
-    code{background:#0b0d0b;padding:2px 6px}
-    .notice{border-color:#b99a38;background:#292412}
-    .date{color:#aeb4ae;font-size:14px}
-    footer{padding:25px;text-align:center;border-top:1px solid #363a36;color:#9fa59f}
-    @media(max-width:700px){
-      header{padding:13px 15px;font-size:13px}
-      main{padding:28px 13px 48px}
-      .hero{padding:22px 17px;margin-bottom:22px;box-shadow:5px 5px 0 #080908}
-      h1{font-size:clamp(30px,10vw,44px)}
-      h2{margin-top:26px;font-size:21px}
-      section{padding:17px 16px;margin:14px 0;border-left-width:4px}
-      p,li{font-size:14px}
-      footer{padding:20px 13px;font-size:12px}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:
+      linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px),
+      var(--bg);background-size:48px 48px;color:var(--ink);font-family:var(--body);line-height:1.6}
+    a{color:inherit}
+    .topbar{position:sticky;top:0;z-index:10;background:rgba(20,23,20,.97);border-bottom:3px solid #070907;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+    .topbar-inner{width:min(1080px,calc(100% - 32px));height:62px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:900;letter-spacing:.05em}
+    .brand img{width:38px;height:38px;object-fit:contain}
+    .back{padding:9px 12px;border:2px solid #454b45;background:#111411;color:#fff;text-decoration:none;font-size:12px;font-weight:900;letter-spacing:.05em}
+    .back:hover{border-color:var(--green);color:#a7f18f}
+    main{width:min(1080px,calc(100% - 32px));margin:auto;padding:44px 0 70px}
+    .hero{position:relative;overflow:hidden;padding:clamp(28px,5vw,52px);background:linear-gradient(135deg,#1e3a1a 0%,#152015 52%,#111411 100%);border:3px solid #3e6535;box-shadow:10px 10px 0 #050605}
+    .hero::after{content:"LR";position:absolute;right:-8px;bottom:-58px;color:rgba(255,255,255,.035);font:400 clamp(150px,24vw,300px)/1 var(--display);letter-spacing:.03em;pointer-events:none}
+    .eyebrow{margin:0 0 8px;color:#87e56a;font-size:11px;font-weight:900;letter-spacing:.18em}
+    h1,h2{font-family:var(--display);font-weight:400;letter-spacing:.055em}
+    h1{max-width:760px;margin:0;font-size:clamp(42px,7vw,76px);line-height:.92;text-shadow:4px 4px 0 #090b09}
+    .hero-lead{max-width:720px;margin:16px 0 0;color:#d8ddd5;font-size:clamp(14px,1.5vw,17px)}
+    .hero-pills{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}
+    .pill{padding:7px 10px;background:#0c110c;border-left:4px solid var(--green);color:#e9eee6;font-size:11px;font-weight:800}
+    .independent{margin:28px 0 0;padding:18px 20px;background:#211f11;border:2px solid #6e6226;border-left:7px solid #cfb33e;box-shadow:6px 6px 0 #070807}
+    .independent strong{color:#ffe986}
+    .independent p{margin:0;color:#e7e3cf}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:28px}
+    .card{min-width:0;padding:24px;background:var(--panel);border:2px solid var(--line);border-top:5px solid var(--green2);box-shadow:6px 6px 0 rgba(0,0,0,.35)}
+    .card.wide{grid-column:1/-1}
+    .card h2{margin:0 0 10px;color:#8ce96f;font-size:clamp(23px,3vw,31px);line-height:1}
+    .card p{margin:8px 0;color:var(--muted);font-size:14px}
+    .card ul{margin:10px 0 0;padding-left:20px;color:var(--muted);font-size:14px}
+    .card li+li{margin-top:7px}
+    .card strong{color:#fff}
+    .mini-note{margin-top:12px;padding:11px 13px;background:#101410;border-left:4px solid #4f9d38;color:#cfd6cc;font-size:12px}
+    .rights{margin-top:28px;padding:24px;background:var(--cream);color:#1c1d1b;border:3px solid #1c1d1b;box-shadow:8px 8px 0 #4a9140}
+    .rights h2{margin:0 0 9px;color:#1d6219;font-size:30px}
+    .rights p{margin:6px 0;color:#4e4b46}
+    footer{margin-top:30px;padding-top:18px;border-top:1px solid #323832;color:#939b91;font-size:12px}
+    footer strong{color:#cfd5cc}
+    @media(max-width:760px){
+      .topbar-inner{width:min(100% - 22px,1080px);height:56px}.brand span{font-size:12px}.brand img{width:34px;height:34px}.back{padding:7px 9px;font-size:10px}
+      main{width:min(100% - 24px,1080px);padding:28px 0 48px}.hero{padding:25px 19px;box-shadow:6px 6px 0 #050605}.hero::after{font-size:150px;bottom:-25px}
+      .hero-lead{font-size:14px}.pill{font-size:10px}.independent{padding:15px 14px}
+      .grid{grid-template-columns:1fr;gap:14px}.card,.card.wide{grid-column:auto;padding:19px 17px}.card p,.card ul{font-size:13px}.rights{padding:19px 17px;box-shadow:5px 5px 0 #4a9140}
     }
   </style>
 </head>
 <body>
-<header><a href="index.html">← VOLVER A LAUNCHER REMASTERED</a></header>
-<main>
-  <div class="hero">
-    <p class="date">Última actualización: 6 de octubre de 2026</p>
-    <h1>POLITICA DE PRIVACIDAD</h1>
-    <p>Esta política explica cómo Launcher Remastered y su sitio oficial tratan la información relacionada con visitantes y usuarios.</p>
-  </div>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html"><img src="assets/lr-tab-icon.png" alt="" width="256" height="256"><span>LAUNCHER REMASTERED</span></a>
+      <a class="back" href="index.html">← VOLVER AL INICIO</a>
+    </div>
+  </header>
 
-  <section class="notice">
-    <h2>PROYECTO INDEPENDIENTE Y NO OFICIAL</h2>
-    <p><strong>Launcher Remastered no es el launcher oficial de Minecraft.</strong> Es un proyecto independiente administrado por ChrisCode+ y no está afiliado, patrocinado, aprobado ni respaldado por Mojang Studios o Microsoft.</p>
-  </section>
+  <main>
+    <section class="hero" aria-labelledby="privacy-title">
+      <p class="eyebrow">PRIVACIDAD Y TRANSPARENCIA</p>
+      <h1 id="privacy-title">POLÍTICA DE PRIVACIDAD</h1>
+      <p class="hero-lead">Aquí explicamos, de forma directa, qué información utiliza Launcher Remastered, para qué se usa y qué datos no solicitamos.</p>
+      <div class="hero-pills" aria-label="Resumen de privacidad">
+        <span class="pill">SIN CUENTA OBLIGATORIA EN LA WEB</span>
+        <span class="pill">SKINS: NICK + IMAGEN</span>
+        <span class="pill">SIN CONTRASEÑAS MICROSOFT</span>
+      </div>
+    </section>
 
-  <section>
-    <h2>1. RESPONSABLE Y ALCANCE</h2>
-    <p>El proyecto es administrado bajo la marca <strong>ChrisCode+</strong>. Esta política se aplica al sitio oficial, a sus páginas asociadas y a los archivos de Launcher Remastered distribuidos desde ellas.</p>
-    <p>Launcher Remastered es un proyecto independiente y no oficial. No está afiliado, patrocinado, aprobado ni respaldado por Mojang Studios o Microsoft, y no es el launcher oficial de Minecraft.</p>
-  </section>
+    <section class="independent" aria-label="Aviso de independencia">
+      <p><strong>PROYECTO INDEPENDIENTE Y NO OFICIAL.</strong> Launcher Remastered no es el launcher oficial de Minecraft y no está afiliado, patrocinado, aprobado ni respaldado por Mojang Studios o Microsoft.</p>
+    </section>
 
-  <section>
-    <h2>2. DATOS QUE RECOPILAMOS DIRECTAMENTE</h2>
-    <p>El sitio no exige crear una cuenta, no solicita contraseñas de Minecraft y no recopila directamente nombres, documentos de identidad, direcciones, información financiera ni otros datos sensibles.</p>
-    <p>Para la función de aspectos del launcher MLR se ha agregado una base de datos limitada que registra únicamente el nick del usuario y la imagen o aspecto que desea implementar. La finalidad de este tratamiento es permitir que dicha imagen se visualice en modo multiplayer entre usuarios que utilicen Launcher Remastered.</p>
-    <p>Esta función aplica solo para usuarios del launcher MLR. No está diseñada para guardar contraseñas, correos, documentos, información financiera ni otros datos sensibles. Los perfiles, configuraciones y rutas que el usuario introduzca en el launcher se procesan localmente en su dispositivo, salvo que una función indique claramente que utiliza un servicio externo.</p>
-    <p>La versión 4.0.0 incorpora un botón de Minecraft Premium que actualmente permanece sin habilitar. Cuando esta función sea habilitada, su objetivo será abrir o utilizar el flujo oficial de autenticación de Microsoft. Launcher Remastered no está diseñado para recibir, almacenar ni conocer la contraseña o las credenciales de la cuenta Microsoft del usuario.</p>
-  </section>
+    <div class="grid">
+      <section class="card">
+        <h2>QUÉ DATOS USAMOS</h2>
+        <p>La web no exige crear una cuenta y no solicita contraseñas, documentos de identidad ni información financiera.</p>
+        <p>Para la función de skins en multijugador se utiliza únicamente el <strong>nick del usuario</strong> y la <strong>imagen/skin asociada</strong>.</p>
+      </section>
 
-  <section>
-    <h2>3. DATOS TECNICOS Y ALOJAMIENTO</h2>
-    <p>El proveedor de alojamiento y los servicios de seguridad pueden registrar automáticamente datos técnicos necesarios para entregar y proteger el sitio, como dirección IP, fecha y hora, navegador, sistema operativo, páginas solicitadas, errores y registros de seguridad. Dichos tratamientos dependen también de las políticas del proveedor utilizado.</p>
-  </section>
+      <section class="card">
+        <h2>PARA QUÉ SE USAN</h2>
+        <p>El nick y la imagen se utilizan para que usuarios de Launcher Remastered puedan visualizar sus skins entre sí en multijugador.</p>
+        <p>No se usan para publicidad, venta de datos ni para obtener acceso a cuentas de Microsoft.</p>
+      </section>
 
-  <section>
-    <h2>4. GOOGLE ANALYTICS</h2>
-    <p>El sitio utiliza Google Analytics únicamente en los despliegues donde su etiqueta se encuentre habilitada. Este servicio puede tratar cantidad de usuarios, estadísticas de sesión, ubicación aproximada, información del navegador y del dispositivo, así como eventos de interacción.</p>
-    <p>Google Analytics puede utilizar identificadores y cookies propias, como <code>_ga</code>, para distinguir sesiones. No se autoriza el envío intencional de nombres, correos, contraseñas u otra información personal identificable a Google Analytics.</p>
-    <p>Cuando la legislación aplicable requiera consentimiento, las funciones analíticas no esenciales deberán permanecer desactivadas hasta que el visitante acepte. El visitante puede rechazar o eliminar cookies desde su navegador y utilizar los controles de privacidad ofrecidos por Google.</p>
-  </section>
+      <section class="card">
+        <h2>MICROSOFT Y PREMIUM</h2>
+        <p>La función Premium está pensada para utilizar el flujo oficial de autenticación de Microsoft.</p>
+        <p><strong>Launcher Remastered no está diseñado para recibir ni almacenar la contraseña o las credenciales de Microsoft.</strong></p>
+      </section>
 
-  <section>
-    <h2>5. COOKIES Y ALMACENAMIENTO LOCAL</h2>
-    <p>El sitio no instala cookies publicitarias propias. Puede usar almacenamiento estrictamente necesario para preferencias técnicas y, cuando Google Analytics esté habilitado y autorizado, cookies de medición. Bloquearlas puede limitar únicamente las funciones relacionadas con estadísticas o preferencias.</p>
-  </section>
+      <section class="card">
+        <h2>SITIO Y SERVICIOS EXTERNOS</h2>
+        <p>El alojamiento puede registrar datos técnicos básicos, como IP, navegador, sistema operativo, fecha, hora y errores, para entregar y proteger el sitio.</p>
+        <p>Al usar contenido o enlaces de YouTube, GitHub, TikTok, PayPal, Microsoft u otros servicios, también aplican las políticas de esos proveedores.</p>
+      </section>
 
-  <section>
-    <h2>6. DESCARGAS Y FUNCIONAMIENTO DEL SOFTWARE</h2>
-    <p>Los archivos para Windows y Linux se ofrecen tal como están. El usuario debe descargarlos únicamente desde la página oficial, verificar su integridad cuando se proporcionen sumas de comprobación y mantener actualizado su sistema y software de seguridad.</p>
-    <p>El funcionamiento puede variar según versión del sistema operativo, controladores, librerías, conexión, permisos, Java, loaders, mods y servicios externos. No se garantiza compatibilidad absoluta con todos los equipos ni disponibilidad ininterrumpida.</p>
-  </section>
+      <section class="card">
+        <h2>COOKIES Y ANALÍTICA</h2>
+        <p>La web no instala cookies publicitarias propias. Si se habilita una herramienta de analítica, puede utilizar cookies o datos técnicos de medición conforme a su propia política.</p>
+        <div class="mini-note">Las funciones no esenciales deben respetar los requisitos de consentimiento aplicables.</div>
+      </section>
 
-  <section>
-    <h2>7. SERVICIOS Y ENLACES DE TERCEROS</h2>
-    <p>El sitio y el launcher pueden dirigir a Minecraft, Microsoft, Mojang, GitHub, YouTube, TikTok, PayPal, Modrinth u otros servicios. Cada tercero controla sus propios datos, cookies, términos y políticas. ChrisCode+ no controla ni responde por el contenido, disponibilidad, seguridad o tratamiento efectuado por dichos terceros.</p>
-    <p>La página principal incorpora un reproductor integrado de YouTube. Al cargar o interactuar con ese contenido, el navegador puede establecer comunicación con servicios de YouTube/Google conforme a sus propias políticas.</p>
-  </section>
+      <section class="card">
+        <h2>CONSERVACIÓN Y SEGURIDAD</h2>
+        <p>Los datos de skins se conservan solo mientras sean necesarios para la función multijugador o hasta que proceda su revisión o eliminación.</p>
+        <p>Se aplican medidas razonables de seguridad, aunque ningún sistema conectado a Internet puede garantizar riesgo cero.</p>
+      </section>
 
-  <section>
-    <h2>8. SEGURIDAD</h2>
-    <p>Se aplican medidas razonables para reducir accesos no autorizados, alteraciones y distribución de archivos manipulados. Sin embargo, ningún sitio, descarga, transmisión o sistema informático puede garantizar seguridad absoluta. El usuario es responsable de conservar copias de seguridad y revisar los permisos y archivos que instala.</p>
-  </section>
+      <section class="card wide">
+        <h2>SOFTWARE, DESCARGAS Y ENLACES</h2>
+        <p>Obtén Launcher Remastered únicamente desde los canales oficiales del proyecto y revisa siempre el origen de cualquier archivo. Los enlaces a Minecraft o Microsoft dirigen a servicios de sus respectivos titulares.</p>
+        <p>Launcher Remastered no distribuye, vende ni sustituye Minecraft. El acceso al juego debe realizarse de forma legítima mediante los canales correspondientes.</p>
+      </section>
+    </div>
 
-  <section>
-    <h2>9. DERECHOS DEL TITULAR</h2>
-    <p>Cuando exista tratamiento de datos personales sujeto a la Ley Orgánica de Protección de Datos Personales de Ecuador u otra norma aplicable, el titular puede solicitar, según corresponda, acceso, rectificación o actualización, eliminación, oposición, portabilidad, suspensión y revocatoria del consentimiento.</p>
-    <p>Las solicitudes pueden presentarse mediante los canales oficiales publicados en el sitio o el perfil oficial de GitHub de ChrisCode+, evitando publicar datos sensibles en espacios públicos. Podrá solicitarse información razonable para verificar identidad y evitar solicitudes fraudulentas.</p>
-  </section>
+    <section class="rights">
+      <h2>TUS DERECHOS</h2>
+      <p>Cuando la legislación aplicable lo permita, puedes solicitar acceso, corrección, actualización o eliminación de los datos personales asociados a las funciones del proyecto.</p>
+      <p>Las solicitudes deben realizarse mediante los canales oficiales de ChrisCode+ o del proyecto, evitando publicar datos sensibles en espacios públicos.</p>
+    </section>
 
-  <section>
-    <h2>10. MENORES DE EDAD</h2>
-    <p>El sitio no está diseñado para recopilar deliberadamente datos personales de menores. Si un representante legal considera que un menor proporcionó información personal, puede solicitar su revisión o eliminación por los canales oficiales.</p>
-  </section>
-
-  <section>
-    <h2>11. CONSERVACION</h2>
-    <p>Los datos técnicos y analíticos se conservan únicamente durante el tiempo configurado en los proveedores utilizados, necesario para seguridad, estadísticas, cumplimiento legal o resolución de incidentes. Cuando proceda, se eliminan o anonimizan conforme a la configuración y normativa aplicable.</p>
-    <p>Los datos asociados a la función de aspectos del launcher MLR, limitados al nick y la imagen seleccionada, se conservarán solo mientras sean necesarios para mantener la visualización multiplayer o hasta que el usuario solicite su revisión o eliminación por los canales oficiales disponibles.</p>
-  </section>
-
-  <section>
-    <h2>12. CAMBIOS A ESTA POLITICA</h2>
-    <p>La política puede actualizarse por cambios funcionales, técnicos, normativos o de proveedores. La versión vigente será la publicada en esta página con su fecha de actualización.</p>
-  </section>
-
-  <section class="notice">
-    <h2>13. AVISO LEGAL</h2>
-    <p>Esta política busca ofrecer transparencia y reglas claras, pero no constituye una garantía de inmunidad frente a reclamaciones ni reemplaza asesoría jurídica profesional. La responsabilidad no puede excluirse cuando una ley aplicable lo prohíba. El uso del sitio y del software implica aceptar los riesgos normales de instalar y ejecutar software, sin limitar los derechos irrenunciables del consumidor o titular de datos.</p>
-  </section>
-</main>
-<footer>© 2026 Launcher Remastered · ChrisCode+</footer>
+    <footer>
+      <strong>Última actualización: 7 de octubre de 2026.</strong><br>
+      Esta política puede actualizarse cuando cambien las funciones, proveedores o requisitos legales. Launcher Remastered es un proyecto independiente y no oficial.
+    </footer>
+  </main>
 </body>
 </html>

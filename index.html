@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#171917">
   <title>Launcher Remastered | Proyecto independiente</title>
-  <meta name="description" content="Launcher Remastered para Windows y Linux. Proyecto independiente y no oficial para organizar versiones, loaders, mods y perfiles de Minecraft Java.">
-  <link rel="icon" href="assets/favicon.png">
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Launcher Remastered es un proyecto independiente y no oficial para organizar versiones, loaders, mods y perfiles de Minecraft Java en Windows y Linux.">
+  <link rel="icon" type="image/png" sizes="256x256" href="assets/lr-tab-icon.png?v=2">
+  <link rel="shortcut icon" href="favicon.ico?v=2">  <link rel="apple-touch-icon" href="assets/lr-tab-icon.png?v=2">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="site-header" id="inicio">
@@ -107,28 +108,28 @@
         <div class="download-intro">
           <p class="eyebrow">WINDOWS Y LINUX</p>
           <h2 id="downloads-title">DESCARGA LAUNCHER REMASTERED</h2>
-          <p>Elige tu sistema operativo y obtén la versión correspondiente. Los archivos actuales de Windows y Linux se mantienen intactos.</p>
+          <p>Elige tu sistema. Este paquete web no incluye los instaladores; las instrucciones de Linux siguen disponibles para consulta.</p>
         </div>
 
         <div class="platform-strip" aria-label="Descargas por sistema operativo">
           <div class="platform-option">
-            <a class="platform-main-link" href="downloads/Minecraft-Launcher-Remastered-Windows.exe" download>
+            <div class="platform-main-link is-disabled" aria-label="Windows 10 y 11; instalador no incluido en este paquete web">
               <span class="platform-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" focusable="false"><path d="M2 4.2 10.7 3v8.3H2V4.2Zm9.8-1.35L22 1.4v9.9H11.8V2.85ZM2 12.5h8.7V21L2 19.8v-7.3Zm9.8 0H22v10.1l-10.2-1.45V12.5Z"/></svg>
               </span>
-              <span class="platform-copy"><strong>WINDOWS 10/11</strong><small>VERSIÓN 4.0.0 · .EXE</small></span>
-              <span class="platform-arrow" aria-hidden="true">↓</span>
-            </a>
+              <span class="platform-copy"><strong>WINDOWS 10/11</strong><small>INSTALADOR NO INCLUIDO EN ESTE PAQUETE WEB</small></span>
+              <span class="platform-status" aria-hidden="true">—</span>
+            </div>
           </div>
 
           <div class="platform-option">
-            <a class="platform-main-link" href="downloads/MinecraftLauncherR-linux-x64.zip" download>
+            <div class="platform-main-link is-disabled" aria-label="Linux x64; paquete binario no incluido en este paquete web">
               <span class="platform-icon terminal-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" focusable="false"><path d="M4 3h16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm0 3v13h16V6H4Zm2.2 3.2 1.4-1.4 4 4-4 4-1.4-1.4 2.6-2.6-2.6-2.6ZM12 16h6v2h-6v-2Z"/></svg>
               </span>
-              <span class="platform-copy"><strong>LINUX X64</strong><small>ZIP NATIVO · INCLUYE INSTRUCCIONES</small></span>
-              <span class="platform-arrow" aria-hidden="true">↓</span>
-            </a>
+              <span class="platform-copy"><strong>LINUX X64</strong><small>BINARIO NO INCLUIDO · INSTRUCCIONES DISPONIBLES</small></span>
+              <span class="platform-status" aria-hidden="true">—</span>
+            </div>
             <a class="platform-note-link" href="downloads/INSTRUCCIONES_LINUX.txt" download>DESCARGAR INSTRUCCIONES .TXT <span aria-hidden="true">↗</span></a>
           </div>
         </div>
@@ -151,7 +152,7 @@
         <div class="rotating-cards" data-rotating-group="project">
           <article class="article-card">
             <img class="article-card-image wilderness" src="assets/wilderness-project.webp" alt="Wilderness Bound de Minecraft" loading="lazy" decoding="async">
-            <h3>ACTUALIZACIÓN 4.1.0</h3>
+            <h3>ACTUALIZACIÓN</h3>
             <p>Revisa todo lo añadido, mejorado, solucionado o eliminado.</p>
             <button type="button" data-modal-open="update-modal">VER ACTUALIZACIÓN <span aria-hidden="true">↗</span></button>
           </article>
@@ -216,7 +217,7 @@
     <div class="modal-panel update-panel">
       <button class="modal-close" type="button" data-modal-close aria-label="Cerrar">×</button>
       <div class="update-heading">
-        <div><p class="eyebrow green">ÚLTIMA VERSIÓN · 4.0.0</p><h2 id="update-title">ACTUALIZACIÓN DEL LAUNCHER</h2></div>
+        <div><p class="eyebrow green">ÚLTIMA ACTUALIZACIÓN</p><h2 id="update-title">ACTUALIZACIÓN DEL LAUNCHER</h2></div>
         <span class="update-badge">WINDOWS + LINUX</span>
       </div>
       <p class="modal-lead">Selecciona una categoría. Los cinco apartados permanecen alineados en una sola línea y muestran sus detalles debajo.</p>
@@ -231,7 +232,7 @@
 
       <div class="changelog-panels">
         <section class="changelog-panel active" id="changelog-new" role="tabpanel">
-          <h3>NUEVO EN 4.0.0</h3>
+          <h3>NUEVO</h3>
           <ul>
             <li>Compatibilidad y notas del launcher actualizadas para versiones recientes de Minecraft Java.</li>
             <li>Nuevo apartado de Skins en Windows.</li>
@@ -276,7 +277,7 @@
           <h3>ELIMINADO / LIMPIADO</h3>
           <ul>
             <li>Procesos, eventos y cargas visuales que ya no aportaban al flujo actual del launcher.</li>
-            <li>Elementos redundantes del diseño anterior reemplazados por la interfaz 4.0.0.</li>
+            <li>Elementos redundantes del diseño anterior reemplazados por la interfaz actual.</li>
             <li>Comportamientos antiguos que podían interferir con loaders o instalaciones modernas.</li>
           </ul>
         </section>
@@ -290,11 +291,11 @@
       <button class="modal-close" type="button" data-modal-close aria-label="Cerrar">×</button>
       <header class="about-header">
         <div><p class="eyebrow green">INFORMACIÓN DEL PROYECTO</p><h2 id="about-title">LAUNCHER REMASTERED</h2></div>
-        <span class="about-version">VERSIÓN 4.0.0</span>
+        <span class="about-version">PROYECTO INDEPENDIENTE</span>
       </header>
       <div class="about-content">
         <section class="about-description" aria-label="Descripción del proyecto">
-          <p>Launcher Remastered (MLR) es un proyecto independiente y no oficial, creado para ofrecer una experiencia cómoda, organizada y visualmente cuidada para Minecraft Java. Su versión 4.0.0 incorpora una interfaz renovada, soporte actualizado y herramientas para administrar versiones, loaders, mods y perfiles.</p>
+          <p>Launcher Remastered (MLR) es un proyecto independiente y no oficial, creado para ofrecer una experiencia cómoda, organizada y visualmente cuidada para Minecraft Java. Integra una interfaz renovada y herramientas para administrar versiones, loaders, mods y perfiles.</p>
           <p>No es el launcher oficial de Minecraft y no pretende sustituirlo. Tampoco distribuye, vende ni proporciona Minecraft; su objetivo es facilitar la gestión del juego y fomentar el acceso legítimo mediante los canales oficiales.</p>
           <p>La única página oficial del proyecto es <a href="https://launch-mcremaster.netlify.app" target="_blank" rel="noopener">launch-mcremaster.netlify.app</a>. La página oficial de Minecraft es <a href="https://www.minecraft.net/es-es" target="_blank" rel="noopener">minecraft.net</a>.</p>
         </section>
